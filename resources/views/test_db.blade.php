@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Travel List</title>
+    <title>Test DB</title>
 </head>
 
 <body>
