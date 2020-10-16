@@ -1,6 +1,7 @@
 Installation
 
 - git clone ssh://git@github.com/christophe-delesalle/laravel.git
+- cd laravel
 - docker-compose up --build --renew-anon-volumes
 - docker-compose exec app /bin/bash
     - composer install
