@@ -12,14 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 Route::get('/test_db', function () {
   $visited = DB::select('select * from places where visited = ?', [1]);
   $togo = DB::select('select * from places where visited = ?', [0]);
 
   return view('test_db', ['visited' => $visited, 'togo' => $togo ] );
 });
+
+Route::get('/', 'HomeController@index')->name('home');
